@@ -139,16 +139,7 @@ const companies = [
     ],
     period: 'August 2023 - Current',
     logo: '/suyanet.png',
-  },
-  {
-    title: 'BetaCode',
-    alt: 'Betacode',
-    url: 'https://www.facebook.com/betacodesv',
-    role: 'Backend Developer',
-    skills: ['JavaScript', 'Node.js', 'Strapi', 'JWT'],
-    period: 'June 2022 - September 2022',
-    logo: '/betacode.jpg',
-  },
+  }
 ];
 
 const educations = [
