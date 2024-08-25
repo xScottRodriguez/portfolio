@@ -23,7 +23,7 @@ import { useTranslation } from 'next-i18next'
 import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { Suspense } from 'react'
-import { loading as Loading } from './loading'
+import { Loading } from '@/components/Loading'
 
 function About() {
   const { colorMode } = useColorMode()
