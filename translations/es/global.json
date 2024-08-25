@@ -1,36 +1,35 @@
 {
-  "dropdown":{
+  "dropdown": {
     "title": "Idioma",
     "spanish": "Español",
     "english": "Ingles"
   },
-  "profile":{
-    "header":"Hey, Yo Soy Michael Lovo!",
+  "profile": {
+    "header": "Hey, Yo Soy Michael Lovo!",
     "Paragraph1": "Desarrollador FullStack de El Salvador",
     "Paragraph2": "Enfocado en",
     "ParagraphRest": "Mi pasion es el desarrollo de aplicaciones webs"
-
   },
-  "techStack":{
+  "techStack": {
     "title": "Stack de Tecnologias",
     "description": "Una lista de mis herramientas y tecnologías favoritas que uso regularmente."
   },
-  "about":{
+  "about": {
     "title": "Sobre Mi",
     "description": "Desarrollador con experiencia en Typescript, Nest.js, JWT,MongoDB, Postgres, Next.js, Chakra UI. Busco oportunidades en proyectos interesantes. Habilidades en trabajo en equipo y comunicación. Intereses en streaming y videojuegos.",
     "career": "Carrera Profesional",
     "education": "Educacion"
   },
-  "github":{
+  "github": {
     "title": "Repositorios de Github",
     "description": "Lista de mis principales repositorios de github destacados . 🔖",
     "paragraph": "¡Siéntete libre de hacer una visita y no olvides dejarme una estrella! ⭐ "
   },
-  "contact":{
-    "title":"Pongámonos en contacto. Déjeme su mensaje 💬",
-    "description":"No dude en ponerse en contacto conmigo.!"
+  "contact": {
+    "title": "Pongámonos en contacto. Déjeme su mensaje 💬",
+    "description": "No dude en ponerse en contacto conmigo.!"
   },
-  "medium":{
+  "medium": {
     "title": "Articulos",
     "description": "Listado de artículos relacionados con todo mi conocimiento tech compartiendo al público. 📖",
     "subText": "Esté atento a más artículos"
@@ -74,13 +73,7 @@
       "alt": "Hospital de Especialidades Nuestra Señora de la paz",
       "url": "https://hospitaldeespecialidades.com.sv/",
       "role": "Desarrollador Backend",
-      "skills": [
-        "TypeScript",
-        "JavaScript",
-        "Node.js",
-        "Nestjs",
-        "Express.js"
-      ],
+      "skills": ["TypeScript", "JavaScript", "Node.js", "Nestjs", "Express.js"],
       "period": "May 2023 - Current",
       "logo": "/hospital.jpg"
     },
@@ -89,12 +82,7 @@
       "alt": "Betacode",
       "url": "https://www.facebook.com/betacodesv",
       "role": "Desarrollador Backend",
-      "skills": [
-        "JavaScript",
-        "Node.js",
-        "Strapi",
-        "JWT"
-      ],
+      "skills": ["JavaScript", "Node.js", "Strapi", "JWT"],
       "period": "Junio 2022 - Septiembre 2022",
       "logo": "/betacode.jpg"
     }

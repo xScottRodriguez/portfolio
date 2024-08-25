@@ -1,0 +1,125 @@
+{
+  "switchLanguage": {
+    "title": "Idioma",
+    "spanish": "Español",
+    "english": "Inglés"
+  },
+  "profile": {
+    "header": "¡Hey, yo soy Michael Lovo!",
+    "paragraph1": "Desarrollador FullStack de El Salvador",
+    "paragraph2": "Enfocado en",
+    "paragraphRest": "Mi pasión es el desarrollo de aplicaciones web"
+  },
+  "techStack": {
+    "title": "Stack de Tecnologías",
+    "description": "Una lista de mis herramientas y tecnologías favoritas que uso regularmente."
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Desarrollador  con sólida experiencia en React.js, TypeScript y tecnologías asociadas, especializado en la creación de interfaces de usuario atractivas y funcionales. Experto en la implementación de sistemas de gestión de usuarios, control de permisos y optimización de la experiencia del usuario.",
+    "career": "Carrera Profesional",
+    "education": "Educación"
+  },
+  "github": {
+    "title": "Repositorios de Github",
+    "description": "Lista de mis principales repositorios de GitHub destacados. 🔖",
+    "paragraph": "¡Siéntete libre de hacer una visita y no olvides dejarme una estrella! ⭐"
+  },
+  "contact": {
+    "title": "Pongámonos en contacto. Déjame tu mensaje 💬",
+    "description": "¡No dudes en ponerte en contacto conmigo!"
+  },
+  "medium": {
+    "title": "Artículos",
+    "description": "Listado de artículos relacionados con todo mi conocimiento tech compartido al público. 📖",
+    "subText": "Esté atento a más artículos"
+  },
+  "jobs": [
+    {
+      "title": "Suyanet",
+      "alt": "Suyanet",
+      "url": "https://suyanet.com.sv/",
+      "role": "Desarrollador Backend",
+      "skills": [
+        "TypeScript",
+        "Node.js",
+        "Nestjs",
+        "JWT",
+        "AWS S3",
+        "MySQL",
+        "Passport",
+        "API Envío de WhatsApp"
+      ],
+      "period": "Enero 2024 - Febrero 2024",
+      "logo": "/suyanet.png"
+    },
+    {
+      "title": "Suyanet",
+      "alt": "Suyanet",
+      "url": "https://suyanet.com.sv/",
+      "role": "Desarrollador Frontend",
+      "skills": [
+        "JavaScript",
+        "Node.js",
+        "React.js",
+        "Redux Toolkit",
+        "Redux RTK Query"
+      ],
+      "period": "Agosto 2023 - Actualmente",
+      "logo": "/suyanet.png"
+    },
+    {
+      "title": "Hospital de Especialidades Nuestra Señora de la Paz",
+      "alt": "Hospital de Especialidades Nuestra Señora de la Paz",
+      "url": "https://hospitaldeespecialidades.com.sv/",
+      "role": "Desarrollador Backend",
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "Nestjs",
+        "Express.js"
+      ],
+      "period": "Mayo 2023 - Actualmente",
+      "logo": "/hospital.jpg"
+    },
+    {
+      "title": "BetaCode",
+      "alt": "Betacode",
+      "url": "https://www.facebook.com/betacodesv",
+      "role": "Desarrollador Backend",
+      "skills": [
+        "JavaScript",
+        "Node.js",
+        "Strapi",
+        "JWT"
+      ],
+      "period": "Junio 2022 - Septiembre 2022",
+      "logo": "/betacode.jpg"
+    }
+  ],
+  "contactMe": "Contáctame",
+  "navigator": {
+    "about": "Acerca de Mí",
+    "github": "GitHub",
+    "contact": "Contacto"
+  },
+  "companies": {
+    "hospital": {
+      "period": "Mayo 2023 - Actualmente",
+      "role": "Desarrollador FullStack"
+    },
+    "suyanet-back": {
+      "period": "Enero 2024 - Marzo 2024",
+      "role": "Desarrollador Backend"
+    },
+    "suyanet-front": {
+      "period": "Agosto 2023 - Agosto 2024",
+      "role": "Desarrollador Frontend"
+    },
+    "ugb": {
+      "period": "Enero 2018 - Diciembre 2023",
+      "role": "Ingeniero de Sistemas"
+    }
+  }
+}

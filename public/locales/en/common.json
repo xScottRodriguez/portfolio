@@ -1,14 +1,14 @@
 {
-  "dropdown": {
+  "switchLanguage": {
     "title": "Language",
     "spanish": "Spanish",
     "english": "English"
   },
   "profile": {
     "header": "Hey, I'm Michael Lovo!",
-    "Paragraph1": "FullStack Developer from El Salvador",
-    "Paragraph2": "Focused on",
-    "ParagraphRest": "My passion is the development of server-side and client-side web applications"
+    "paragraph1": "FullStack Developer from El Salvador",
+    "paragraph2": "Focused on",
+    "paragraphRest": "My passion is the development of server-side and client-side web applications"
   },
   "techStack": {
     "title": "Tech Stack",
@@ -16,7 +16,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "Developer with experience in Typescript, Nest.js, JWT, MongoDB, Postgres, Next.js, and Chakra UI. I am looking for opportunities in interesting projects. Communication and teamwork skills. Communication skills. Interested in streaming and video games.",
+    "description": "Developer with solid experience in React.js, TypeScript, and related technologies, specializing in creating attractive and functional user interfaces. Expert in implementing user management systems, permission control, and optimizing user experience.",
     "career": "Career",
     "education": "Education"
   },
@@ -72,7 +72,13 @@
       "alt": "Hospital de Especialidades Nuestra Señora de la paz",
       "url": "https://hospitaldeespecialidades.com.sv/",
       "role": "Backend Developer",
-      "skills": ["TypeScript", "JavaScript", "Node.js", "Nestjs", "Express.js"],
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "Nestjs",
+        "Express.js"
+      ],
       "period": "May 2023 - Current",
       "logo": "/hospital.jpg"
     },
@@ -81,9 +87,38 @@
       "alt": "Betacode",
       "url": "https://www.facebook.com/betacodesv",
       "role": "Backend Developer",
-      "skills": ["JavaScript", "Node.js", "Strapi", "JWT"],
+      "skills": [
+        "JavaScript",
+        "Node.js",
+        "Strapi",
+        "JWT"
+      ],
       "period": "June 2022 - September 2022",
       "logo": "/betacode.jpg"
     }
-  ]
+  ],
+  "contactMe": "Contact Me",
+  "navigator": {
+    "about": "About Me",
+    "github": "Github",
+    "contact": "Contact"
+  },
+  "companies": {
+    "hospital": {
+      "period": "May 2023 - Current",
+      "role": "FullStack Developer"
+    },
+    "suyanet-back": {
+      "period": "January 2024 - April 2024",
+      "role": "Backend Developer"
+    },
+    "suyanet-front": {
+      "period": "August 2023 - August 2024",
+      "role": "Frontend Developer"
+    },
+    "ugb": {
+      "period": "January 2018 - December 2023",
+      "role": "Software Engineer"
+    }
+  }
 }
