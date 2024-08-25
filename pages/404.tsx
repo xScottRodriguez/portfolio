@@ -2,7 +2,7 @@ import { Box, Button, Heading, Stack, Text } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import React from 'react'
 
-const notFound = () => {
+function notFound() {
   const router = useRouter()
   return (
     <Box

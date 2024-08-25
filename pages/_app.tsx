@@ -11,7 +11,7 @@ import { CookiesEnum } from '@/enums'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const { i18n } = useTranslation('common')
-  const [loading, setLoading] = useState(false)
+  const [_loading, setLoading] = useState(false)
   const router = useRouter()
   const changelanguage = async () => {
     try {
