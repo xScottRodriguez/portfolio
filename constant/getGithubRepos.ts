@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { GitRepo } from 'interfaces'
 
-const pinnedRepos = ['booking-movile-app', 'booking-system']
+const pinnedRepos = ['booking-movile-app', 'booking-system', 'invoices-system']
 
 type Props = {
   username: string

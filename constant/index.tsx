@@ -1,10 +1,15 @@
 import { IconType } from 'react-icons'
 import { SiGmail, SiNextdotjs, SiPrisma, SiRedux } from 'react-icons/si'
-import { FaGitAlt, FaLinkedin, FaGithub, FaReact } from 'react-icons/fa'
+import {
+  FaGitAlt,
+  FaLinkedin,
+  FaGithub,
+  FaReact,
+  FaDocker
+} from 'react-icons/fa'
 import { CgAlbum } from 'react-icons/cg'
 import { SiTypescript, SiNestjs, SiMongodb, SiPostgresql } from 'react-icons/si'
 import { Icon, Image, Menu } from '@chakra-ui/react'
-import { ReactNode } from 'react'
 
 interface Company {
   title: string
@@ -92,7 +97,8 @@ const siteConfig: SiteConfig = {
 }
 
 const resume: Resume = {
-  url: 'https://drive.google.com/file/d/1uo1dN1cwvr2T7rG9S5JTgXuDJgWNWXRt/view?usp=sharing',
+  url: 'https://drive.google.com/file/d/1HQww0Lvu_2IXZs1092y208TKYBajw3uF/view?usp=sharing',
+
   icon: () => <CgAlbum />,
   name: 'Resume'
 }
@@ -149,10 +155,33 @@ const techStacks: TechStack[] = [
     name: 'Git & Github',
     icon: () => <FaGitAlt fontSize="20px" />,
     color: 'red.600'
+  },
+  {
+    name: 'Docker',
+    icon: () => <FaDocker fontSize="20px" />,
+    color: 'blue.600'
   }
 ]
 
 const companies: Company[] = [
+  {
+    id: 'consultora',
+    title: 'Sistemas Pliret (Outsourcing Banco Integral)',
+    alt: 'Sistemas Pliret Consultora',
+    url: 'https://www.bancointegral.com/',
+    role: 'role',
+    skills: [
+      'TypeScript',
+      'Docker',
+      'Microservices',
+      'Nestjs',
+      'Sequelize',
+      'SQL Server'
+    ],
+    period: 'period',
+    logo: '/pliret.jpg'
+  },
+
   {
     id: 'hospital',
     title: 'Hospital de Especialidades Nuestra Señora de la paz',

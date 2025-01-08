@@ -36,6 +36,22 @@
   },
   "jobs": [
     {
+      "title": "Sistemas Pliret Consultora (outsourcing Banco Integral)",
+      "alt": "Sistemas Pliret (outsourcing Banco Integral)",
+      "url": "https://pliret.com/",
+      "role": "Desarrollador Backend",
+      "skills": [
+        "TypeScript",
+        "Docker",
+        "Microservices",
+        "Nestjs",
+        "Sequelize",
+        "SqlServer"
+      ],
+      "period": "Noviembre 2024 - Actualidad",
+      "logo": "/pliret.jpg"
+    },
+    {
       "title": "Suyanet",
       "alt": "Suyanet",
       "url": "https://suyanet.com.sv/",
@@ -105,6 +121,10 @@
     "contact": "Contacto"
   },
   "companies": {
+    "consultora": {
+      "period": "Noviembre 2024 - Actualmente",
+      "role": "Desarrollador Backend"
+    },
     "hospital": {
       "period": "Mayo 2023 - Actualmente",
       "role": "Desarrollador FullStack"
