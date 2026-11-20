@@ -2,3 +2,5 @@ node_modules
 .next
 .github
 .git
+.env
+docs

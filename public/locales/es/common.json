@@ -1,145 +1,134 @@
 {
-  "switchLanguage": {
-    "title": "Idioma",
-    "spanish": "Español",
-    "english": "Inglés"
+  "meta": {
+    "title": "Michael Lovo · Backend developer",
+    "description": "Ingeniero en sistemas de El Salvador. Construyo microservicios y APIs con Node.js, NestJS y TypeScript."
   },
-  "profile": {
-    "header": "¡Hey, yo soy Michael Lovo!",
-    "paragraph1": "Desarrollador FullStack de El Salvador",
-    "paragraph2": "Enfocado en",
-    "paragraphRest": "Mi pasión es el desarrollo de aplicaciones web"
+  "nav": {
+    "label": "Principal",
+    "timeline": "Trayectoria",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "switchLanguage": "Cambiar idioma a inglés"
   },
-  "techStack": {
-    "title": "Stack de Tecnologías",
-    "description": "Una lista de mis herramientas y tecnologías favoritas que uso regularmente."
+  "intro": {
+    "photoAlt": "Foto de Michael Lovo",
+    "location": "San Miguel, El Salvador",
+    "now": "Ahora en Banco Integral",
+    "greeting": "Hola, soy Michael.",
+    "tagline": "Construyo lo que no se ve.",
+    "lead": "Soy ingeniero en sistemas y llevo más de 3 años escribiendo software. Lo que más disfruto es lo que no se ve: APIs, colas, bases de datos y esa parte del sistema que tiene que funcionar siempre, aunque nadie la note.",
+    "body": "Hoy trabajo en Banco Integral construyendo los microservicios detrás de la facturación electrónica del banco, unas mil facturas al día, con Node.js, NestJS y TypeScript.",
+    "cv": "Mi CV"
   },
-  "about": {
-    "title": "Sobre Mí",
-    "description": "Desarrollador  con sólida experiencia en React.js, TypeScript y tecnologías asociadas, especializado en la creación de interfaces de usuario atractivas y funcionales. Experto en la implementación de sistemas de gestión de usuarios, control de permisos y optimización de la experiencia del usuario.",
-    "career": "Carrera Profesional",
-    "education": "Educación"
+  "timeline": {
+    "title": "Por dónde he pasado",
+    "intro": "Casi todo mi camino ha girado alrededor de la facturación electrónica: primero en un hospital, después en un banco.",
+    "items": [
+      {
+        "period": "2025 — hoy",
+        "title": "Backend Software Engineer, Banco Integral",
+        "body": "Pasé de consultor a planta. Mantengo microservicios críticos, implemento requerimientos regulatorios y construí la integración con goAML, con la autenticación y los tokens centralizados."
+      },
+      {
+        "period": "2024 — 2025",
+        "title": "Backend Developer, Consultora Pliret",
+        "body": "Desde la consultora armé la plataforma de Facturación Electrónica de Banco Integral y diseñé su arquitectura de microservicios."
+      },
+      {
+        "period": "2023 — 2024",
+        "title": "FullStack Developer, Hospital Nuestra Señora de la Paz",
+        "body": "Mi primer microservicio de facturación electrónica. Con colas y Amazon S3 logré que el procesamiento masivo fuera ~20 % más rápido. También hice módulos de seguros y compras en React."
+      },
+      {
+        "period": "2023 — 2024",
+        "title": "Backend Developer, Suyanet",
+        "body": "Un sistema administrativo para clínicas, con roles y despliegues automáticos con Docker y GitHub Actions."
+      },
+      {
+        "period": "2018 — 2023",
+        "title": "Ingeniería en Sistemas, Universidad Gerardo Barrios",
+        "body": "Donde empezó todo."
+      }
+    ]
   },
-  "github": {
-    "title": "Repositorios de Github",
-    "description": "Lista de mis principales repositorios de GitHub destacados. 🔖",
-    "paragraph": "¡Siéntete libre de hacer una visita y no olvides dejarme una estrella! ⭐"
+  "projects": {
+    "title": "Cosas que he construido",
+    "intro": "Algunos de los sistemas de los que estoy más orgulloso.",
+    "more": "Ver más en mi GitHub",
+    "items": [
+      {
+        "title": "Facturación Electrónica para un banco",
+        "metric": "~1,000 DTE / día",
+        "body": "Microservicios que emiten las facturas electrónicas del banco y les dan trazabilidad, con colas en RabbitMQ y SQL Server.",
+        "stack": "NestJS · RabbitMQ · SQL Server · Docker"
+      },
+      {
+        "title": "Integración con goAML",
+        "body": "Un servicio que centraliza la autenticación y los tokens para consumir las APIs regulatorias de forma segura.",
+        "stack": "Node.js · TypeScript · APIs REST"
+      },
+      {
+        "title": "Procesamiento masivo en un hospital",
+        "metric": "+20 % rendimiento",
+        "body": "Rediseñé el procesamiento de facturas con colas y Amazon S3 para que aguantara volúmenes grandes sin trabarse.",
+        "stack": "Node.js · Amazon S3 · Docker"
+      }
+    ]
+  },
+  "courses": {
+    "title": "Cursos y certificados",
+    "intro": "Siempre estoy aprendiendo algo nuevo.",
+    "view": "Ver diploma",
+    "items": [
+      {
+        "title": "Administración e Implementación de Kubernetes On-premises y AWS EKS",
+        "meta": "WN Academy · 2026",
+        "file": "/certificates/kubernetes.pdf"
+      },
+      {
+        "title": "Fundamentos de Arquitectura de Software",
+        "meta": "Platzi · 2026",
+        "file": "/certificates/arquitectura-de-software.pdf"
+      },
+      {
+        "title": "React: De cero a experto (Hooks y MERN)",
+        "meta": "Udemy · 2021",
+        "file": "/certificates/react-mern.pdf"
+      }
+    ]
+  },
+  "stack": {
+    "title": "Con qué trabajo",
+    "items": [
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "Express",
+      "React",
+      "SQL Server",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "RabbitMQ",
+      "Docker",
+      "Nginx",
+      "GitHub Actions",
+      "Amazon S3",
+      "Microservicios",
+      "Clean Architecture"
+    ]
+  },
+  "offCode": {
+    "title": "Fuera del código",
+    "body": "Cuando no estoy programando, probablemente estoy jugando videojuegos (casi siempre Fortnite) o viendo algún stream. Y cuando toca despegarme de la pantalla, salgo a jugar basketball.",
+    "items": [
+      "🎮 Fortnite",
+      "🏀 Basketball"
+    ]
   },
   "contact": {
-    "title": "Pongámonos en contacto. Déjame tu mensaje 💬",
-    "description": "¡No dudes en ponerte en contacto conmigo!"
+    "title": "¿Nos tomamos un café?",
+    "body": "Si quieres platicar de backend, arquitectura o tienes un proyecto en mente, escríbeme. Siempre respondo, aunque sea con un café de por medio."
   },
-  "medium": {
-    "title": "Artículos",
-    "description": "Listado de artículos relacionados con todo mi conocimiento tech compartido al público. 📖",
-    "subText": "Esté atento a más artículos"
-  },
-  "jobs": [
-    {
-      "title": "Sistemas Pliret Consultora (outsourcing Banco Integral)",
-      "alt": "Sistemas Pliret (outsourcing Banco Integral)",
-      "url": "https://pliret.com/",
-      "role": "Desarrollador Backend",
-      "skills": [
-        "TypeScript",
-        "Docker",
-        "Microservices",
-        "Nestjs",
-        "Sequelize",
-        "SqlServer"
-      ],
-      "period": "Noviembre 2024 - Actualidad",
-      "logo": "/pliret.jpg"
-    },
-    {
-      "title": "Suyanet",
-      "alt": "Suyanet",
-      "url": "https://suyanet.com.sv/",
-      "role": "Desarrollador Backend",
-      "skills": [
-        "TypeScript",
-        "Node.js",
-        "Nestjs",
-        "JWT",
-        "AWS S3",
-        "MySQL",
-        "Passport",
-        "API Envío de WhatsApp"
-      ],
-      "period": "Enero 2024 - Febrero 2024",
-      "logo": "/suyanet.png"
-    },
-    {
-      "title": "Suyanet",
-      "alt": "Suyanet",
-      "url": "https://suyanet.com.sv/",
-      "role": "Desarrollador Frontend",
-      "skills": [
-        "JavaScript",
-        "Node.js",
-        "React.js",
-        "Redux Toolkit",
-        "Redux RTK Query"
-      ],
-      "period": "Agosto 2023 - Actualmente",
-      "logo": "/suyanet.png"
-    },
-    {
-      "title": "Hospital de Especialidades Nuestra Señora de la Paz",
-      "alt": "Hospital de Especialidades Nuestra Señora de la Paz",
-      "url": "https://hospitaldeespecialidades.com.sv/",
-      "role": "Desarrollador Backend",
-      "skills": [
-        "TypeScript",
-        "JavaScript",
-        "Node.js",
-        "Nestjs",
-        "Express.js"
-      ],
-      "period": "Mayo 2023 - Actualmente",
-      "logo": "/hospital.jpg"
-    },
-    {
-      "title": "BetaCode",
-      "alt": "Betacode",
-      "url": "https://www.facebook.com/betacodesv",
-      "role": "Desarrollador Backend",
-      "skills": [
-        "JavaScript",
-        "Node.js",
-        "Strapi",
-        "JWT"
-      ],
-      "period": "Junio 2022 - Septiembre 2022",
-      "logo": "/betacode.jpg"
-    }
-  ],
-  "contactMe": "Contáctame",
-  "navigator": {
-    "about": "Acerca de Mí",
-    "github": "GitHub",
-    "contact": "Contacto"
-  },
-  "companies": {
-    "consultora": {
-      "period": "Noviembre 2024 - Actualmente",
-      "role": "Desarrollador Backend"
-    },
-    "hospital": {
-      "period": "Mayo 2023 - Actualmente",
-      "role": "Desarrollador FullStack"
-    },
-    "suyanet-back": {
-      "period": "Enero 2024 - Marzo 2024",
-      "role": "Desarrollador Backend"
-    },
-    "suyanet-front": {
-      "period": "Agosto 2023 - Agosto 2024",
-      "role": "Desarrollador Frontend"
-    },
-    "ugb": {
-      "period": "Enero 2018 - Diciembre 2023",
-      "role": "Ingeniero de Sistemas"
-    }
-  }
+  "footer": "Hecho por Michael Lovo desde San Miguel, El Salvador · {{year}}"
 }

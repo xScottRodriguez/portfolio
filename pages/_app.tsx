@@ -1,6 +1,6 @@
-import '@/styles/globals.css'
-import { ChakraProvider, theme } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
+import { Inter, JetBrains_Mono, Space_Grotesk } from 'next/font/google'
 import { FC, useEffect, useState } from 'react'
 
 import Layout from '@/components/Layout'
@@ -8,6 +8,11 @@ import { appWithTranslation, useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 import { cookiesPlugin } from '@/plugins'
 import { CookiesEnum } from '@/enums'
+import theme from '@/theme'
+
+const heading = Space_Grotesk({ subsets: ['latin'], weight: ['500', '700'] })
+const body = Inter({ subsets: ['latin'], weight: ['400', '500', '600'] })
+const mono = JetBrains_Mono({ subsets: ['latin'], weight: ['400', '500'] })
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const { i18n } = useTranslation('common')
@@ -47,6 +52,14 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   }, [])
   return (
     <ChakraProvider theme={theme}>
+      {/* En :root para que body y los portales de Chakra hereden las fuentes */}
+      <style jsx global>{`
+        :root {
+          --font-heading: ${heading.style.fontFamily};
+          --font-body: ${body.style.fontFamily};
+          --font-mono: ${mono.style.fontFamily};
+        }
+      `}</style>
       <Layout>
         <Component {...pageProps} />
       </Layout>

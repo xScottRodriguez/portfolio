@@ -1,8 +1,9 @@
-version: '3'
 services:
   web:
     build: .
     ports:
       - '3000:3000'
-    environment:
-      - NODE_ENV=production
+    # Solo /api/spotify usa variables de entorno
+    env_file:
+      - path: .env
+        required: false
