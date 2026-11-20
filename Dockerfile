@@ -1,30 +1,27 @@
 # Etapa de construcción
-FROM node:18-alpine as build
-
+FROM node:20-alpine AS build
 WORKDIR /app
+RUN corepack enable && corepack prepare pnpm@10.6.5 --activate
 
-# Copiar package.json y yarn.lock 
-COPY package*.json yarn.lock ./
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
 
-# Instalar dependencias
-RUN yarn install --only=production
-
-# Copiar solo los archivos necesarios (ajusta esto según tus necesidades)
 COPY . .
+# next/font descarga las fuentes de Google; el IPv6 de Docker en WSL falla
+ENV NODE_OPTIONS=--dns-result-order=ipv4first
+RUN pnpm build
 
-# Construir la aplicación de Next.js
-RUN yarn build
-
-# Etapa de producción
-# Usar una imagen de Node.js
-FROM node:18-alpine 
-# Establecer directorio de trabajo
+# Etapa de producción: solo el servidor standalone, sin node_modules completos
+FROM node:20-alpine
 WORKDIR /app
+ENV NODE_ENV=production PORT=3000 HOSTNAME=0.0.0.0
 
-COPY --from=build /app /app
+COPY --from=build --chown=node:node /app/.next/standalone ./
+COPY --from=build /app/.next/static ./.next/static
+COPY --from=build /app/public ./public
+# next-i18next lee su config en tiempo de ejecución
+COPY --from=build /app/next-i18next.config.js ./
 
+USER node
 EXPOSE 3000
-
-COPY .env .env
-
-CMD ["yarn", "start"]
+CMD ["node", "server.js"]

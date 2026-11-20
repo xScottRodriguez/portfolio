@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Paleta y tipografía</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#C4B5FD}a:hover{color:#F4F1FF}
+</style>
+</helmet>
+<div style="width: 880px; height: 720px; box-sizing: border-box; padding: 48px; background: #0E0A1A; color: #F4F1FF; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 32px">
+<div>
+<p style="margin: 0; font: 500 13px 'JetBrains Mono', monospace; color: #A78BFA">Sistema visual</p>
+<h1 style="margin: 6px 0 0; font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 700">Paleta “Violeta nocturno”</h1>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px">
+<sc-for list="{{swatches}}" as="s" hint-placeholder-count="8">
+<div style="border-radius: 14px; overflow: hidden; border: 1px solid #2C2347; background: #161126">
+<div style="height: 84px; background: {{s.hex}}"></div>
+<div style="padding: 10px 12px">
+<p style="margin: 0; font-size: 14px; font-weight: 600">{{s.name}}</p>
+<p style="margin: 2px 0 0; font: 400 12px 'JetBrains Mono', monospace; color: #A9A1C2">{{s.hex}} · {{s.role}}</p>
+</div>
+</div>
+</sc-for>
+</div>
+
+<div style="display: flex; gap: 14px">
+<div style="flex: 1; padding: 20px; border-radius: 14px; background: #161126; border: 1px solid #2C2347">
+<p style="margin: 0; font: 400 12px 'JetBrains Mono', monospace; color: #A9A1C2">Títulos · Space Grotesk 700</p>
+<p style="margin: 6px 0 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700">Aa Backend</p>
+</div>
+<div style="flex: 1; padding: 20px; border-radius: 14px; background: #161126; border: 1px solid #2C2347">
+<p style="margin: 0; font: 400 12px 'JetBrains Mono', monospace; color: #A9A1C2">Texto · Inter 400/600</p>
+<p style="margin: 6px 0 0; font-size: 18px; color: #A9A1C2">Microservicios para banca.</p>
+</div>
+<div style="flex: 1; padding: 20px; border-radius: 14px; background: #161126; border: 1px solid #2C2347">
+<p style="margin: 0; font: 400 12px 'JetBrains Mono', monospace; color: #A9A1C2">Etiquetas · JetBrains Mono</p>
+<p style="margin: 6px 0 0; font: 500 18px 'JetBrains Mono', monospace; color: #C4B5FD">~1,000 DTE/día</p>
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":880,"height":720}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+swatches: [
+{ name: 'Noche', hex: '#0E0A1A', role: 'fondo' },
+{ name: 'Superficie', hex: '#161126', role: 'tarjetas' },
+{ name: 'Borde', hex: '#2C2347', role: 'líneas' },
+{ name: 'Violeta 600', hex: '#7C3AED', role: 'botones' },
+{ name: 'Violeta 400', hex: '#A78BFA', role: 'acento' },
+{ name: 'Lila', hex: '#C4B5FD', role: 'etiquetas' },
+{ name: 'Niebla', hex: '#A9A1C2', role: 'texto 2°' },
+{ name: 'Lavanda', hex: '#F4F1FF', role: 'texto' }
+]
+};
+}
+}
+</script>
+</body>
+</html>

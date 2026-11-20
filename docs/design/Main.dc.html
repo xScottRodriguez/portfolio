@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Michael Lovo · Portfolio personal</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#0E0A1A}
+a{color:#C4B5FD;text-decoration:none}a:hover{color:#F4F1FF}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #0E0A1A; color: #F4F1FF; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.7">
+
+<header style="max-width: 760px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<a href="#inicio" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; color: #F4F1FF">michael<span style="color: {{accent}}">.</span>lovo</a>
+<nav aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px; font-size: 15px">
+<a href="#trayectoria" style="padding: 10px 10px; color: #A9A1C2">Trayectoria</a>
+<a href="#proyectos" style="padding: 10px 10px; color: #A9A1C2">Proyectos</a>
+<a href="#contacto" style="padding: 10px 10px; color: #A9A1C2">Contacto</a>
+<button type="button" aria-label="Cambiar idioma" style="margin-left: 6px; height: 36px; padding: 0 10px; border-radius: 8px; border: 1px solid #2C2347; background: transparent; color: #A9A1C2; font: 500 13px 'JetBrains Mono', monospace; cursor: pointer">ES / EN</button>
+</nav>
+</header>
+
+<main style="max-width: 760px; margin: 0 auto; padding: 0 24px">
+
+<!-- INTRO -->
+<section id="inicio" style="padding: 56px 0 72px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px">
+<img src="/_blob/94f9315fd5e8004ec317323a1e28a6dd" alt="Foto de Michael Lovo" style="width: 104px; height: 104px; border-radius: 50%; object-fit: cover; border: 3px solid #7C3AED; box-shadow: 0 0 0 6px #1E1733">
+<div>
+<p style="margin: 0; font: 500 14px 'JetBrains Mono', monospace; color: #A9A1C2">San Miguel, El Salvador</p>
+<p style="margin: 4px 0 0; display: inline-flex; align-items: center; gap: 8px; font-size: 15px; color: #C4B5FD"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #34D399"></span>Ahora en Banco Integral</p>
+</div>
+</div>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(2.4rem, 6vw, 3.5rem); line-height: 1.1; letter-spacing: -0.02em">Hola, soy Michael.<br><span style="color: {{accent}}">Me gusta el backend.</span></h1>
+<p style="margin: 0; font-size: 19px; color: #CFC8E3">Soy ingeniero en sistemas y llevo más de 3 años escribiendo software. Lo que más disfruto es lo que no se ve: APIs, colas, bases de datos y esa parte del sistema que tiene que funcionar siempre, aunque nadie la note.</p>
+<p style="margin: 0; color: #A9A1C2">Hoy trabajo en Banco Integral construyendo los microservicios detrás de la facturación electrónica del banco, unas mil facturas al día, con Node.js, NestJS y TypeScript.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px">
+<a href="https://github.com/xScottRodriguez" style="display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px; border-radius: 10px; border: 1px solid #2C2347; background: #161126; color: #F4F1FF; font-size: 15px; font-weight: 500">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path></svg>
+GitHub</a>
+<a href="https://www.linkedin.com/in/xmichaelrodriguez/" style="display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px; border-radius: 10px; border: 1px solid #2C2347; background: #161126; color: #F4F1FF; font-size: 15px; font-weight: 500">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+LinkedIn</a>
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px; border-radius: 10px; background: #7C3AED; color: #FFFFFF; font-size: 15px; font-weight: 600">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg>
+Mi CV</a>
+</div>
+</section>
+
+<!-- TRAYECTORIA -->
+<section id="trayectoria" style="padding: 0 0 72px">
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700">Por dónde he pasado</h2>
+<p style="margin: 0 0 32px; color: #A9A1C2">Casi todo mi camino ha girado alrededor de la facturación electrónica: primero en un hospital, después en un banco.</p>
+<ol style="list-style: none; margin: 0; padding: 0 0 0 24px; border-left: 2px solid #2C2347; display: flex; flex-direction: column; gap: 36px">
+<li style="position: relative">
+<span aria-hidden="true" style="position: absolute; left: -32px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: {{accent}}; box-shadow: 0 0 0 4px #0E0A1A"></span>
+<p style="margin: 0; font: 500 13px 'JetBrains Mono', monospace; color: #A9A1C2">2025 — hoy</p>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 600">Backend Software Engineer, Banco Integral</h3>
+<p style="margin: 6px 0 0; color: #A9A1C2">Pasé de consultor a planta. Mantengo microservicios críticos, implemento requerimientos regulatorios y construí la integración con goAML, con la autenticación y los tokens centralizados.</p>
+</li>
+<li style="position: relative">
+<span aria-hidden="true" style="position: absolute; left: -32px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: #3B2F5E; box-shadow: 0 0 0 4px #0E0A1A"></span>
+<p style="margin: 0; font: 500 13px 'JetBrains Mono', monospace; color: #A9A1C2">2024 — 2025</p>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 600">Backend Developer, Consultora Pliret</h3>
+<p style="margin: 6px 0 0; color: #A9A1C2">Desde la consultora armé la plataforma de Facturación Electrónica de Banco Integral y diseñé su arquitectura de microservicios.</p>
+</li>
+<li style="position: relative">
+<span aria-hidden="true" style="position: absolute; left: -32px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: #3B2F5E; box-shadow: 0 0 0 4px #0E0A1A"></span>
+<p style="margin: 0; font: 500 13px 'JetBrains Mono', monospace; color: #A9A1C2">2023 — 2024</p>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 600">FullStack Developer, Hospital Nuestra Señora de la Paz</h3>
+<p style="margin: 6px 0 0; color: #A9A1C2">Mi primer microservicio de facturación electrónica. Con colas y Amazon S3 logré que el procesamiento masivo fuera ~20 % más rápido. También hice módulos de seguros y compras en React.</p>
+</li>
+<li style="position: relative">
+<span aria-hidden="true" style="position: absolute; left: -32px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: #3B2F5E; box-shadow: 0 0 0 4px #0E0A1A"></span>
+<p style="margin: 0; font: 500 13px 'JetBrains Mono', monospace; color: #A9A1C2">2023 — 2024</p>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 600">Backend Developer, Suyanet</h3>
+<p style="margin: 6px 0 0; color: #A9A1C2">Un sistema administrativo para clínicas, con roles y despliegues automáticos con Docker y GitHub Actions.</p>
+</li>
+<li style="position: relative">
+<span aria-hidden="true" style="position: absolute; left: -32px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: #3B2F5E; box-shadow: 0 0 0 4px #0E0A1A"></span>
+<p style="margin: 0; font: 500 13px 'JetBrains Mono', monospace; color: #A9A1C2">2018 — 2023</p>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 600">Ingeniería en Sistemas, Universidad Gerardo Barrios</h3>
+<p style="margin: 6px 0 0; color: #A9A1C2">Donde empezó todo.</p>
+</li>
+</ol>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" style="padding: 0 0 72px">
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700">Cosas que he construido</h2>
+<p style="margin: 0 0 28px; color: #A9A1C2">Algunos de los sistemas de los que estoy más orgulloso.</p>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<article style="padding: 24px; border-radius: 16px; background: #161126; border: 1px solid #2C2347">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px">
+<h3 style="margin: 0; font-size: 19px; font-weight: 600">Facturación Electrónica para un banco</h3>
+<span style="font: 500 13px 'JetBrains Mono', monospace; color: #C4B5FD">~1,000 DTE / día</span>
+</div>
+<p style="margin: 8px 0 0; color: #A9A1C2">Microservicios que emiten las facturas electrónicas del banco y les dan trazabilidad, con colas en RabbitMQ y SQL Server.</p>
+<p style="margin: 14px 0 0; font: 400 13px 'JetBrains Mono', monospace; color: #8E86A8">NestJS · RabbitMQ · SQL Server · Docker</p>
+</article>
+<article style="padding: 24px; border-radius: 16px; background: #161126; border: 1px solid #2C2347">
+<h3 style="margin: 0; font-size: 19px; font-weight: 600">Integración con goAML</h3>
+<p style="margin: 8px 0 0; color: #A9A1C2">Un servicio que centraliza la autenticación y los tokens para consumir las APIs regulatorias de forma segura.</p>
+<p style="margin: 14px 0 0; font: 400 13px 'JetBrains Mono', monospace; color: #8E86A8">Node.js · TypeScript · APIs REST</p>
+</article>
+<article style="padding: 24px; border-radius: 16px; background: #161126; border: 1px solid #2C2347">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px">
+<h3 style="margin: 0; font-size: 19px; font-weight: 600">Procesamiento masivo en un hospital</h3>
+<span style="font: 500 13px 'JetBrains Mono', monospace; color: #C4B5FD">+20 % rendimiento</span>
+</div>
+<p style="margin: 8px 0 0; color: #A9A1C2">Rediseñé el procesamiento de facturas con colas y Amazon S3 para que aguantara volúmenes grandes sin trabarse.</p>
+<p style="margin: 14px 0 0; font: 400 13px 'JetBrains Mono', monospace; color: #8E86A8">Node.js · Amazon S3 · Docker</p>
+</article>
+</div>
+<a href="https://github.com/xScottRodriguez" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; min-height: 44px; font-size: 15px; font-weight: 500">Ver más en mi GitHub
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+</section>
+
+<!-- CURSOS -->
+<section id="cursos" style="padding: 0 0 72px">
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700">Cursos y certificados</h2>
+<p style="margin: 0 0 24px; color: #A9A1C2">Siempre estoy aprendiendo algo nuevo.</p>
+<article style="padding: 20px 24px; border-radius: 16px; background: #161126; border: 1px solid #2C2347; display: flex; flex-wrap: wrap; align-items: center; gap: 18px">
+<div aria-hidden="true" style="flex: 0 0 auto; width: 52px; height: 52px; border-radius: 14px; background: #2A1F4A; display: flex; align-items: center; justify-content: center; color: {{accent}}">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"></circle><path d="m8.5 13.8-1.5 7.2 5-3 5 3-1.5-7.2"></path></svg>
+</div>
+<div style="flex: 1 1 260px; min-width: 0">
+<h3 style="margin: 0; font-size: 18px; font-weight: 600">Curso de React</h3>
+<p style="margin: 2px 0 0; font-size: 15px; color: #A9A1C2">Desde React 16 en adelante · [Plataforma] · [Año]</p>
+</div>
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px; border-radius: 10px; border: 1px solid #3B2F5E; color: #F4F1FF; font-size: 15px; font-weight: 500">
+Ver diploma
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"></path><path d="M20 4 10 14"></path><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"></path></svg>
+</a>
+</article>
+</section>
+
+<!-- STACK -->
+<section style="padding: 0 0 72px">
+<h2 style="margin: 0 0 20px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700">Con qué trabajo</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{stack}}" as="tool" hint-placeholder-count="12">
+<span style="padding: 6px 12px; border-radius: 999px; background: #161126; border: 1px solid #2C2347; font-size: 14px; color: #E4DEF7">{{tool}}</span>
+</sc-for>
+</div>
+</section>
+
+<!-- FUERA DEL CODIGO -->
+<section style="padding: 0 0 72px">
+<h2 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700">Fuera del código</h2>
+<p style="margin: 0; color: #A9A1C2">Cuando no estoy programando, probablemente estoy jugando videojuegos o viendo algún stream. [Agrega aquí algo más tuyo: tu juego favorito, un hobby, lo que estás aprendiendo.]</p>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" style="padding: 0 0 80px">
+<div style="padding: 32px; border-radius: 20px; background: #1A1230; border: 1px solid #3B2F5E">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700">¿Hablamos?</h2>
+<p style="margin: 10px 0 20px; color: #A9A1C2">Si quieres charlar de backend o arquitectura, o tienes una oportunidad interesante, mi correo siempre está abierto.</p>
+<a href="mailto:scottrodriguez2k@gmail.com" style="display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 20px; border-radius: 12px; background: #7C3AED; color: #FFFFFF; font-weight: 600">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+scottrodriguez2k@gmail.com</a>
+</div>
+</section>
+</main>
+
+<footer style="max-width: 760px; margin: 0 auto; padding: 24px 24px 40px; border-top: 1px solid #2C2347; color: #8E86A8; font-size: 14px">
+<p style="margin: 0">Hecho por Michael Lovo desde San Miguel, El Salvador · 2026</p>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#A78BFA","options":["#A78BFA","#C084FC","#818CF8","#F0ABFC"]},"$preview":{"width":1440,"height":2900}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+accent: this.props.accent ?? '#A78BFA',
+stack: ['Node.js', 'NestJS', 'TypeScript', 'Express', 'React', 'SQL Server', 'PostgreSQL', 'MongoDB', 'Redis', 'RabbitMQ', 'Docker', 'Nginx', 'GitHub Actions', 'Amazon S3', 'Microservicios', 'Clean Architecture']
+};
+}
+}
+</script>
+</body>
+</html>

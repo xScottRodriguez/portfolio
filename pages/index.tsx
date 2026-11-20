@@ -1,37 +1,52 @@
+import { Box, Text } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { Container, Divider } from '@chakra-ui/react'
+import { useTranslation } from 'next-i18next'
 
-import styles from '@/styles/Home.module.css'
-import { ProfileSection, TechStackSection } from '@/section'
+import Pills from '@/components/Pills'
+import Section from '@/components/Section'
+import {
+  ContactSection,
+  CoursesSection,
+  IntroSection,
+  ProjectsSection,
+  StackSection,
+  TimelineSection
+} from '@/section'
 
 export default function Home() {
+  const { t } = useTranslation('common')
+
   return (
-    <section className={styles.container}>
+    <>
       <Head>
-        <title>Michael | Home</title>
-        <meta
-          property="og:title"
-          content="Michael Lovo | Backend Developer JR"
-        ></meta>
-        <meta
-          name="description"
-          content="Michael Lovo | Backend Developer JR"
-        />
-        <link rel="icon" href="/profile_picture.png" />
+        <title>{t('meta.title')}</title>
+        <meta property="og:title" content={t('meta.title')} />
+        <meta name="description" content={t('meta.description')} />
       </Head>
 
-      <main>
-        <Container maxW="container.lg" mt={['5', '10']} mb={['5', '10']}>
-          <ProfileSection />
-          <Divider my={7} />
-          <TechStackSection />
-        </Container>
-      </main>
-    </section>
+      <Box as="main" maxW="760px" mx="auto" px={{ base: 4, sm: 6 }}>
+        <IntroSection />
+        <TimelineSection />
+        <ProjectsSection />
+        <CoursesSection />
+        <StackSection />
+        <Section title={t('offCode.title')}>
+          <Text color="mist" mb={5}>
+            {t('offCode.body')}
+          </Text>
+          {/* returnObjects no tipa el resultado; la forma la define common.json */}
+          <Pills
+            items={t('offCode.items', { returnObjects: true }) as string[]}
+          />
+        </Section>
+        <ContactSection />
+      </Box>
+    </>
   )
 }
+
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
