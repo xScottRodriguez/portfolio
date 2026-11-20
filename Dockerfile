@@ -1,5 +1,5 @@
 # Etapa de construcción
-FROM node:20-alpine AS build
+FROM node:24-alpine AS build
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@10.6.5 --activate
 
@@ -12,7 +12,7 @@ ENV NODE_OPTIONS=--dns-result-order=ipv4first
 RUN pnpm build
 
 # Etapa de producción: solo el servidor standalone, sin node_modules completos
-FROM node:20-alpine
+FROM node:24-alpine
 WORKDIR /app
 ENV NODE_ENV=production PORT=3000 HOSTNAME=0.0.0.0
 
