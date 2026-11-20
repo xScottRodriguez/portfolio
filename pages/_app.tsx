@@ -1,6 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
-import { Inter, JetBrains_Mono, Space_Grotesk } from 'next/font/google'
+import localFont from 'next/font/local'
 import { FC, useEffect, useState } from 'react'
 
 import Layout from '@/components/Layout'
@@ -10,9 +10,16 @@ import { cookiesPlugin } from '@/plugins'
 import { CookiesEnum } from '@/enums'
 import theme from '@/theme'
 
-const heading = Space_Grotesk({ subsets: ['latin'], weight: ['500', '700'] })
-const body = Inter({ subsets: ['latin'], weight: ['400', '500', '600'] })
-const mono = JetBrains_Mono({ subsets: ['latin'], weight: ['400', '500'] })
+// Fuentes variables (subset latin) guardadas en el repo: el build no depende de Google Fonts
+const heading = localFont({
+  src: '../fonts/space-grotesk.woff2',
+  weight: '500 700'
+})
+const body = localFont({ src: '../fonts/inter.woff2', weight: '400 600' })
+const mono = localFont({
+  src: '../fonts/jetbrains-mono.woff2',
+  weight: '400 500'
+})
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
   const { i18n } = useTranslation('common')

@@ -7,8 +7,6 @@ COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
 COPY . .
-# next/font descarga las fuentes de Google; el IPv6 de Docker en WSL falla
-ENV NODE_OPTIONS=--dns-result-order=ipv4first
 RUN pnpm build
 
 # Etapa de producción: solo el servidor standalone, sin node_modules completos
